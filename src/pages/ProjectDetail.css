@@ -1,0 +1,121 @@
+.project-detail {
+  padding: 100px 0 var(--section-gap);
+  min-height: 100vh;
+}
+
+.back-link {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-bottom: 2.5rem;
+  transition: color 0.15s;
+}
+
+.back-link:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.project-detail-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.project-detail-tags span {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 500;
+  background: var(--surface-2);
+  color: var(--accent);
+  padding: 0.2rem 0.6rem;
+  border-radius: 3px;
+  border: 1px solid var(--border);
+}
+
+.project-detail-title {
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  color: var(--text);
+  margin-bottom: 1.5rem;
+}
+
+.project-detail-overview {
+  font-size: 1rem;
+  line-height: 1.8;
+  max-width: 620px;
+  margin-bottom: 3rem;
+  border-left: 3px solid var(--accent);
+  padding-left: 1.25rem;
+  color: var(--text-muted);
+}
+
+.project-detail-section h2 {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: var(--accent-mid);
+  margin-bottom: 1.25rem;
+}
+
+.project-detail-section h2::before {
+  content: '// ';
+  opacity: 0.5;
+}
+
+.project-highlights {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-width: 640px;
+}
+
+.project-highlights li {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+  padding: 0.9rem 0 0.9rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+}
+
+.project-highlights li:last-child {
+  border-bottom: none;
+}
+
+.project-highlights li::before {
+  content: '›';
+  position: absolute;
+  left: 0;
+  color: var(--accent-mid);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.project-detail-link {
+  display: inline-block;
+  margin-top: 2.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: #fff;
+  background: var(--accent);
+  padding: 0.65rem 1.25rem;
+  border-radius: 4px;
+  transition: background 0.15s, box-shadow 0.15s;
+}
+
+.project-detail-link:hover {
+  background: #1e40af;
+  box-shadow: 0 4px 14px rgba(29, 78, 216, 0.3);
+  text-decoration: none;
+}
+
+.not-found {
+  padding: 120px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
