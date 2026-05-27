@@ -32,6 +32,12 @@ const projects = [
     link: '#',
   },
   {
+    title: 'ESM Documentation Revamp',
+    tags: ['Content Strategy', 'ServiceNow', 'Cross-functional'],
+    desc: 'Led a full revamp of the Employee Service Management documentation suite in collaboration with writers across multiple product teams. Overhauled the ESM landing page — restructuring its information architecture for clarity and discoverability — and drove consistency across the entire ESM content set.',
+    link: 'https://www.servicenow.com/docs/r/employee-service-management/employee-service-management-overview.html',
+  },
+  {
     title: 'Documentation Accuracy Initiative',
     tags: ['Content Governance', 'AI-Assisted Review', 'Cross-functional'],
     desc: 'Led a cross-functional correction effort addressing overstated claims about the Application Administration feature across multiple release versions. Used AI-assisted cross-referencing to surface and resolve critical inaccuracies in ESM and HR Roles content.',
