@@ -8,7 +8,6 @@ export default function Contact() {
         <p className="section-label">Contact</p>
         <h2 className="section-title">Let's work together</h2>
         <p className="contact-desc">
-          I'm open to full-time roles and contract documentation projects.
           If you have complex technical content that needs a thoughtful writer —
           or you're building something at the intersection of AI and docs — I'd
           love to hear from you.
