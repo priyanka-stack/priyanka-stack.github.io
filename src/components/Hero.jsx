@@ -1,5 +1,10 @@
 import './Hero.css'
 
+function scrollTo(id) {
+  const el = document.getElementById(id)
+  if (el) el.scrollIntoView({ behavior: 'smooth' })
+}
+
 export default function Hero() {
   return (
     <section id="hero" className="hero">
@@ -16,8 +21,8 @@ export default function Hero() {
           both humans and AI agents.
         </p>
         <div className="hero-cta">
-          <a href="#projects" className="btn-primary">View my work</a>
-          <a href="#contact" className="btn-ghost">Get in touch</a>
+          <button className="btn-primary" onClick={() => scrollTo('projects')}>View my work</button>
+          <button className="btn-ghost" onClick={() => scrollTo('contact')}>Get in touch</button>
         </div>
       </div>
     </section>

@@ -29,12 +29,13 @@
   padding: 0.2rem 0.5rem;
   border: 1.5px solid var(--accent-mid);
   border-radius: 4px;
+  background: none;
+  cursor: pointer;
   transition: background 0.15s;
 }
 
 .nav-logo:hover {
   background: var(--accent-light);
-  text-decoration: none;
 }
 
 .nav-links {
@@ -42,17 +43,20 @@
   gap: 2rem;
 }
 
-.nav-links a {
+.nav-links button {
   font-family: var(--font-mono);
   font-size: 0.78rem;
   font-weight: 400;
   color: var(--text-muted);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
   transition: color 0.15s;
 }
 
-.nav-links a:hover {
+.nav-links button:hover {
   color: var(--accent);
-  text-decoration: none;
 }
 
 .menu-toggle {
