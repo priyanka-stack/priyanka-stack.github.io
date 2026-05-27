@@ -1,0 +1,98 @@
+/* ── Reset & Base ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #ffffff;
+  --surface: #f4f8ff;
+  --surface-2: #e8f0fe;
+  --border: #d0dff7;
+  --text: #0a1628;
+  --text-muted: #4a6080;
+  --accent: #1d4ed8;
+  --accent-mid: #3b82f6;
+  --accent-light: #eff6ff;
+  --accent-glow: rgba(29, 78, 216, 0.08);
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-serif: 'Lora', Georgia, serif;
+  --font-mono: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+  --max-w: 780px;
+  --section-gap: 6rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Layout helpers ── */
+.container {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+section {
+  padding: var(--section-gap) 0;
+}
+
+/* ── Typography ── */
+h1, h2, h3 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+h1 { font-size: clamp(2.2rem, 5vw, 3.2rem); }
+h2 { font-size: 1.6rem; }
+h3 { font-size: 1.05rem; }
+
+p { color: var(--text-muted); }
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ── Section label — monospace, technical ── */
+.section-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: var(--accent-mid);
+  margin-bottom: 0.75rem;
+}
+
+.section-label::before {
+  content: '// ';
+  opacity: 0.5;
+}
+
+.section-title {
+  margin-bottom: 2.5rem;
+  color: var(--text);
+}
+
+/* ── Divider ── */
+.divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 0;
+}

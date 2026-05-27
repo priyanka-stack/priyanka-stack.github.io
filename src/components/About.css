@@ -1,0 +1,18 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 3rem;
+  padding-top: var(--section-gap);
+}
+
+.about-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about-body p { font-size: 0.97rem; }
+
+@media (max-width: 640px) {
+  .about-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+}
